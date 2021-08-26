@@ -9,10 +9,9 @@ public class ChessBoard {
         }
 
         if (x1 != x2 && y1 != y2) {
-            int xAxis = Math.abs(x2 - x1);
-            int yAxis = Math.abs(y2 - y1);
-
-            rsl = xAxis == yAxis ? xAxis : rsl;
+            if ((Math.abs(x2 - x1) == Math.abs(y2 - y1))) {
+                rsl = (Math.abs(x2 - x1));
+            }
         }
 
         return rsl;
