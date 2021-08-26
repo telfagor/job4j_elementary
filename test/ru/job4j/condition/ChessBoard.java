@@ -5,7 +5,7 @@ public class ChessBoard {
         int rsl = 0;
 
         if ((x1 < 0 || y1 < 0) || (x1 > 7 || y1 > 7) || ((x2 < 0 || y2 < 0) || (x2 > 7 || y2 > 7))) {
-            return 0;
+            return rsl;
         }
 
         if (x1 != x2 && y1 != y2) {
