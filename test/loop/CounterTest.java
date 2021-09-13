@@ -15,12 +15,5 @@ public class CounterTest {
         assertEquals(expected, rsl);
     }
 
-    @Test
-    public void whenSumEvenNumbersFromOneToTenThenThirty() {
-        int start = 1;
-        int finish = 10;
-        int expected = 30;
-        int rsl = sumByEven(start, finish);
-        assertEquals(expected, rsl);
-    }
+
 }
