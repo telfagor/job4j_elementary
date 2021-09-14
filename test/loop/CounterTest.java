@@ -4,6 +4,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import static loop.Counter.*;
 
+@SuppressWarnings("checkstyle:EmptyLineSeparator")
 public class CounterTest {
 
     @Test
@@ -14,6 +15,4 @@ public class CounterTest {
         int rsl = sum(start, finish);
         assertEquals(expected, rsl);
     }
-
-
 }
