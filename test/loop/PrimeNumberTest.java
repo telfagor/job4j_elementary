@@ -12,6 +12,7 @@ public class PrimeNumberTest {
         int expected = 3;
         int rsl = PrimeNumber.calc(finish);
         Assert.assertEquals(expected, rsl);
+
     }
 
     @Test
