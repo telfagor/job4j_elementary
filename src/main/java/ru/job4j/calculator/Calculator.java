@@ -5,7 +5,6 @@ public class Calculator {
         int one = 1;
         int two = 2;
         int onePlusTwo = one + two;
-//        System.out.println(onePlusTwo);
 
         int six = 6;
         int four = 4;
