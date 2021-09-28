@@ -25,4 +25,5 @@ public class CheckTest {
         boolean rsl = Check.mono(data);
         Assert.assertFalse(rsl);
     }
+
 }
