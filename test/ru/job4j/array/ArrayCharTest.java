@@ -20,4 +20,5 @@ public class ArrayCharTest {
         boolean result = ArrayChar.startsWith(word, prefix);
         Assert.assertFalse(result);
     }
+
 }
