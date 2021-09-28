@@ -20,4 +20,5 @@ public class EqLastTest {
         boolean result = EqLast.check(left, right);
         Assert.assertFalse(result);
     }
+
 }
