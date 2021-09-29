@@ -20,4 +20,5 @@ public class EndsWithTest {
         boolean rsl = EndsWith.endsWith(word, post);
         Assert.assertFalse(rsl);
     }
+
 }
