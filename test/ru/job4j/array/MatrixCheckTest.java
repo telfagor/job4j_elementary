@@ -17,4 +17,17 @@ public class MatrixCheckTest {
         boolean rsl = MatrixCheck.monoHorizontal(input, row);
         Assert.assertTrue(rsl);
     }
+
+    @Test
+    public void whenHasMonoVertical() {
+        char[][] input = {
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'}
+        };
+
+        int column = 2;
+        boolean rsl = MatrixCheck.monoVertical(input, column);
+        Assert.assertTrue(rsl);
+    }
 }
