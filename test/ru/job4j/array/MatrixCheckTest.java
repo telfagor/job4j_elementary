@@ -69,4 +69,28 @@ public class MatrixCheckTest {
         char[] expected = {'X', 'Y', 'Z'};
         Assert.assertArrayEquals(expected, rsl);
     }
+
+    @Test
+    public void whenNotMonoRow() {
+        char[][] input = {
+                {' ', ' ', 'X'},
+                {' ', 'Y', ' '},
+                {'Z', ' ', ' '}
+        };
+        int row = 2;
+        boolean rsl = MatrixCheck.isMonoRow(input, row);
+        Assert.assertFalse(rsl);
+    }
+
+    @Test
+    public void whenNotMonoColumn() {
+        char[][] input = {
+                {'X', 'Y', 'Z'},
+                {' ', ' ', ' '},
+                {' ', ' ', ' '}
+        };
+        int column = 1;
+        boolean rsl = MatrixCheck.isMonoColumn(input, column);
+        Assert.assertFalse(rsl);
+    }
 }
