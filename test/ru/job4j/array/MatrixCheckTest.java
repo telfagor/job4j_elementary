@@ -93,4 +93,5 @@ public class MatrixCheckTest {
         boolean rsl = MatrixCheck.isMonoColumn(input, column);
         Assert.assertFalse(rsl);
     }
+
 }
