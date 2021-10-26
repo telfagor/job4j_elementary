@@ -71,18 +71,6 @@ public class MatrixCheckTest {
     }
 
     @Test
-    public void whenNotMonoRow() {
-        char[][] input = {
-                {' ', ' ', 'X'},
-                {' ', 'Y', ' '},
-                {'Z', ' ', ' '}
-        };
-        int row = 2;
-        boolean rsl = MatrixCheck.isMonoRow(input, row);
-        Assert.assertFalse(rsl);
-    }
-
-    @Test
     public void whenNotMonoColumn() {
         char[][] input = {
                 {'X', 'Y', 'Z'},
@@ -90,7 +78,7 @@ public class MatrixCheckTest {
                 {' ', ' ', ' '}
         };
         int column = 1;
-        boolean rsl = MatrixCheck.isMonoColumn(input, column);
+        boolean rsl = MatrixCheck.monoVertical(input, column);
         Assert.assertFalse(rsl);
     }
 
