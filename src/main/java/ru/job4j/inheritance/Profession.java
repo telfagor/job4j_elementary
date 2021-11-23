@@ -1,22 +1,10 @@
 package ru.job4j.inheritance;
 
 public class Profession {
-    private String name,
-                 surname,
-                 education,
-                 birthday;
-
-    public Profession(String name) {
-        this(name, null, null, null);
-    }
-
-    public Profession(String name, String surname) {
-        this(name, surname, null, null);
-    }
-
-    public Profession(String name, String surname, String education) {
-        this(name, surname, education, null);
-    }
+     String name;
+     String surname;
+     String education;
+     String birthday;
 
     public Profession(String name, String surname, String education, String birthday) {
         this.name = name;
